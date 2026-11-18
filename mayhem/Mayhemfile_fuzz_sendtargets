@@ -1,0 +1,10 @@
+project: savantenvs/open-iscsi
+target: fuzz_sendtargets
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_sendtargets/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_sendtargets
+    libfuzzer: true
+    timeout: 5
+    dictionary: /mayhem/mayhem/fuzz_sendtargets/fuzz_sendtargets.dict

@@ -1,0 +1,22 @@
+# BEGIN RECORD 2.1.13
+iface.iscsi_ifacename = iface0
+iface.net_ifacename = eth0
+iface.ipaddress = 10.0.0.2
+iface.prefix_len = 0
+iface.transport_name = tcp
+iface.vlan_id = 0
+iface.vlan_priority = 0
+iface.iface_num = 0
+iface.mtu = 0
+iface.port = 0
+iface.tos = 0
+iface.ttl = 0
+iface.tcp_wsf = 0
+iface.tcp_timer_scale = 0
+iface.def_task_mgmt_timeout = 0
+iface.erl = 0
+iface.max_receive_data_len = 0
+iface.first_burst_len = 0
+iface.max_outstanding_r2t = 0
+iface.max_burst_len = 0
+# END RECORD

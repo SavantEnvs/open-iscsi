@@ -1,0 +1,9 @@
+project: savantenvs/open-iscsi
+target: fuzz_uip_packet
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_uip_packet/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_uip_packet
+    libfuzzer: true
+    timeout: 5

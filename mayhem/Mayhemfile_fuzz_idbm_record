@@ -1,0 +1,10 @@
+project: savantenvs/open-iscsi
+target: fuzz_idbm_record
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_idbm_record/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_idbm_record
+    libfuzzer: true
+    timeout: 5
+    dictionary: /mayhem/mayhem/fuzz_idbm_record/fuzz_idbm_record.dict

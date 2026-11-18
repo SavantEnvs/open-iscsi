@@ -1,0 +1,9 @@
+project: savantenvs/open-iscsi
+target: fuzz_iscsi_login
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_iscsi_login/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_iscsi_login
+    libfuzzer: true
+    timeout: 5
